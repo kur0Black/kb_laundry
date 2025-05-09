@@ -1,7 +1,9 @@
 local laundries ={}
 
 
-
+local function BuyBusiness()
+    
+end
 
 
 
@@ -11,7 +13,9 @@ local function Teste()
 end
 
 
-
+RegisterCommand("comprar", function ()
+    BuyBusiness()
+end)
 
 RegisterCommand("lavar", function ()
     Teste()
