@@ -7,6 +7,10 @@ version '0.1'
 
 client_script {'client/*.lua'}
 
-server_scripts {'@oxmysql/lib/MySQL.lua','server/*.lua'}
+server_scripts {
+    '@oxmysql/lib/MySQL.lua',
+    '@qbx_core/modules/playerdata.lua',
+    'server/*.lua'
+}
 
 shared_scripts {'shared/*.lua'}
