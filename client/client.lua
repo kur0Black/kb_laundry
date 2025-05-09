@@ -6,7 +6,7 @@ local function BuyBusiness()
     { item = "goldbar", amount = 2 },
     { item = "phone", amount = 1 }
     }, "loja-central")
-
+    print(success)
     if success then
         print("Você lavou R$" .. valor .. " em itens.")
         exports.qbx_core:Notify("Você lavou $" .. valor .. " em itens.", 'success', 5000)

@@ -1,5 +1,5 @@
 lib.callback.register('lavanderia:lavarItens', function(source, items, shop_id)
-    local xPlayer = source
+    local source = source
     local total = 0
 
     -- Verifica e soma o valor total dos itens
@@ -15,8 +15,9 @@ lib.callback.register('lavanderia:lavarItens', function(source, items, shop_id)
         if hasItem < amount then
             return false, "Você não possui " .. amount .. "x " .. item
         end
-
+        print(Config.Itemlist[item])
         total = total + (Config.Itemlist[item] * amount)
+        print(total)
     end
 
     if total <= 0 then
@@ -29,9 +30,11 @@ lib.callback.register('lavanderia:lavarItens', function(source, items, shop_id)
     end
 
     local player = exports.qbx_core:GetPlayer(source)
-    if not player then return false, "Player inválido." end
 
+    if not player then return false, "Player inválido." end
     local citizenid = player.citizenid
+    print("CID: "..player.cid)
+    
     local cooldown = os.time() + (Config.Cooldown * 3600)
 
     -- Atualiza ou cria lavanderia
