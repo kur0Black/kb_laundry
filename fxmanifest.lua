@@ -1,4 +1,4 @@
-fx_version 'ceruleam'
+fx_version 'cerulean'
 game {'gta5'}
 
 author 'kur0_black'
@@ -7,6 +7,6 @@ version '0.1'
 
 client_script {'client/*.lua'}
 
-server_scripts {'server/*.lua'}
+server_scripts {'@oxmysql/lib/MySQL.lua','server/*.lua'}
 
 shared_scripts {'shared/*.lua'}
