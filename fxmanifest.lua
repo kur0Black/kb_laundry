@@ -1,5 +1,6 @@
 fx_version 'cerulean'
 game {'gta5'}
+lua54 'yes'
 
 author 'kur0_black'
 description 'A laundry script in BETA.'
@@ -13,4 +14,7 @@ server_scripts {
     'server/*.lua'
 }
 
-shared_scripts {'shared/*.lua'}
+shared_scripts {
+    'shared/*.lua',
+    '@ox_lib/init.lua',
+}
