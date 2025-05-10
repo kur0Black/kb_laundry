@@ -33,7 +33,6 @@ lib.callback.register('lavanderia:lavarItens', function(source, items, shop_id)
 
     if not player then return false, "Player inválido." end
     local citizenid = player.citizenid
-    print("CID: "..player.cid)
     
     local cooldown = os.time() + (Config.Cooldown * 3600)
 

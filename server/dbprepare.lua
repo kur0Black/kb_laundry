@@ -11,10 +11,6 @@ local tablecreate = MySQL.query.await([[
     );
 ]])
 
-
-
-
-
 if tablecreate then
     print("Tabela 'laundries' verificada/criada com sucesso.")
 end

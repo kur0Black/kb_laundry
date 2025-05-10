@@ -28,8 +28,8 @@ end
 
 RegisterCommand("comprar", function ()
     BuyBusiness()
-end,false)
+end, false )
 
 RegisterCommand("lavar", function ()
     Teste()
-end,false)
+end, false )

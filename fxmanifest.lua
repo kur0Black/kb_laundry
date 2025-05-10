@@ -18,3 +18,10 @@ shared_scripts {
     'shared/*.lua',
     '@ox_lib/init.lua',
 }
+
+dependencies {
+    'oxmysql',
+    'ox_inventory',
+    'ox_lib',
+    '/gameBuild:3095'
+}
