@@ -10,7 +10,6 @@ client_script {'client/*.lua'}
 
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
-    '@qbx_core/modules/playerdata.lua',
     'server/*.lua'
 }
 
