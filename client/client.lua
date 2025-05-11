@@ -13,9 +13,34 @@ local function BuyBusiness()
     else
         print("Erro ao lavar: " .. valor)
     end
-
 end
 
+local function CreateTarget(vec3,name)
+    --
+end
+exports.ox_target:addSphereZone({
+    coords = Config.Properties[2].location,
+    radius = 0.3, -- define o raio da zona
+    name = Config.Properties[2].name,
+    debug = Config.Debug,
+    drawSprite = true,
+    options = {
+        {
+            label = 'Acessar Estabelecimento',
+            icon = 'fas fa-building',
+            distance = 1.0, -- distância máxima para ver/interagir
+            onSelect = function(data)
+                local property = Config.Properties[1]
+                -- lógica ao interagir com a zona
+                print('Interagiu com: ' .. property.name)
+            end
+        }
+    }
+})
+
+print(Config.Properties[1].name)
+print(json.encode(Config.Properties[1].price))
+print(Config.Properties[1].location) -- vec3
 
 local function Teste()
     print("teste funcionou no client")

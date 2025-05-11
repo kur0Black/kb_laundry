@@ -62,3 +62,7 @@ lib.callback.register('lavanderia:lavarItens', function(source, items, shop_id)
     return true, total
 end)
 
+
+local function CalcularDeposito()
+    
+end

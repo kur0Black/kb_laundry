@@ -10,11 +10,18 @@ CreateThread(function()
         Framework.name = 'qbox'
         Framework.Core = exports['qbx-core']:GetCoreObject()
         print('\x1b[32mFramework [QBX] Detectada.\x1b[0m')
-
     else
         print('[ERRO] Nenhum framework detectado!')
         return
     end
+    -- Locate Target Script
+    if GetResourceState('ox_target') == 'started' then
+        print('\x1b[32mOX Target Detectado.\x1b[0m')
+
+    elseif GetResourceState('qb-target') == 'started' then
+        print('\x1b[32mOX Target Detectado.\x1b[0m')
+    end
+    
 end)
 
 -- Wrapper para pegar o player
