@@ -6,6 +6,8 @@ Config.GlobalCooldown = 1  -- Hours
 
 Config.laundrySeller = false -- NPC Sell the propertie
 
+Config.Progress = 'ox' -- Progress Bar (ox/qb)
+Config.Notify = 'ox' -- Nofity (only ox)
 
 
 Config.Properties = {
